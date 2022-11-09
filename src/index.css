@@ -17,6 +17,7 @@
 
   --menu-item-bg-color: #404c5b;
   --menu-item-font-color: #00c29bbf;
+  --nav-item-pressed: #dff3ef;
 }
 
 * {
@@ -32,24 +33,24 @@ ul {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 h4,
 p {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 small {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 body {

@@ -1,11 +1,24 @@
 import { useState } from 'react';
+
+//components
+
+import NavItem from '../components/NavItem/NavItem';
+
+//icons imports
+
 import MenuIcon from '../assets/icons/Menu.svg';
 import NotificationsIcon from '../assets/icons/Notifications.svg';
+import { ReactComponent as SignOutIcon } from '../assets/icons/SignOut.svg';
 import PersonIcon from '../assets/icons/Person.svg';
+import { ReactComponent as TrailIcon } from '../assets/icons/Trilha.svg';
+import { ReactComponent as RankingIcon } from '../assets/icons/Ranking.svg';
+import { ReactComponent as ProfileIcon } from '../assets/icons/Profile.svg';
+import { ReactComponent as MyAccountIcon } from '../assets/icons/MyAccount.svg';
+import { ReactComponent as AttendanceIcon } from '../assets/icons/Attendance.svg';
+
+//styles
 
 import styles from './Layout.module.css';
-
-const nav = document.getElementsByClassName('nav');
 
 const Layout = props => {
   const [isOpen, setIsOpen] = useState(true);
@@ -19,13 +32,12 @@ const Layout = props => {
     }
   };
 
-  console.log(nav);
-
   return (
     <section className={styles.layout}>
       <header className={styles.header}>
-        <button onClick={handleMenuClick}>
+        <button>
           <img
+            onClick={handleMenuClick}
             src={MenuIcon}
             alt="Ícone de Menu representado por 3 linhas horizontais agrupadas verticalmente"
           />
@@ -42,50 +54,56 @@ const Layout = props => {
           </button>
         </div>
       </header>
-      {isOpen ? (
+      {!isOpen ? (
         <nav className={`${styles.nav} slide-out`}>
           <ul>
-            <li>
-              <h3>Trilhas</h3>
-            </li>
-            <li>
-              <h3>Ranking</h3>
-            </li>
-            <li>
-              <h3>Perfil</h3>
-            </li>
-            <li>
-              <h3>Minha Conta</h3>
-            </li>
-            <li>
-              <h3>Atendimento</h3>
-            </li>
+            <NavItem label="Trilhas">
+              <TrailIcon />
+            </NavItem>
+            <NavItem label="Ranking">
+              <RankingIcon />
+            </NavItem>
+            <NavItem label="Perfil">
+              <ProfileIcon />
+            </NavItem>
+            <NavItem label="Conta">
+              <MyAccountIcon />
+            </NavItem>
+            <NavItem label="Suporte">
+              <AttendanceIcon />
+            </NavItem>
           </ul>
           <button>
+            <SignOutIcon />
             <h3>Sair</h3>
           </button>
         </nav>
       ) : (
         <nav className={`${styles.nav} slide-in`}>
           <ul>
-            <li>
-              <h3>Trilhas</h3>
-            </li>
-            <li>
-              <h3>Ranking</h3>
-            </li>
-            <li>
-              <h3>Perfil</h3>
-            </li>
-            <li>
-              <h3>Minha Conta</h3>
-            </li>
-            <li>
-              <h3>Atendimento</h3>
-            </li>
+            <NavItem label="Trilhas">
+              <TrailIcon />
+            </NavItem>
+            <NavItem label="Ranking">
+              <RankingIcon />
+            </NavItem>
+            <NavItem label="Perfil">
+              <ProfileIcon />
+            </NavItem>
+            <NavItem label="Conta">
+              <MyAccountIcon />
+            </NavItem>
+            <NavItem label="Suporte">
+              <AttendanceIcon />
+            </NavItem>
           </ul>
           <button>
-            <h3>Sair</h3>
+            <div>
+              <SignOutIcon />
+            </div>
+            <div>
+              <h3>Sair</h3>
+            </div>
           </button>
         </nav>
       )}

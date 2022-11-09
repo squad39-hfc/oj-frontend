@@ -1,5 +1,9 @@
 .layout {
   display: grid;
+  grid-template-areas:
+    'header header'
+    'nav  main'
+    'nav  main';
 }
 
 .header {
@@ -11,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-
+  grid-area: header;
   box-shadow: 0px 2px 6px rgba(33, 33, 33, 0.25);
 }
 
@@ -19,9 +23,13 @@
   border: none;
   outline: none;
   background-color: transparent;
-  cursor: pointer;
+
   padding: 0;
   margin: 0;
+}
+
+.header button img {
+  cursor: pointer;
 }
 
 .header div {
@@ -48,6 +56,7 @@
   background-color: var(--dark-bg-color);
   padding-top: 1.5rem;
   padding-bottom: 1rem;
+  grid-area: nav;
 }
 
 .nav__invisible {
@@ -61,7 +70,7 @@
 }
 
 .nav ul li,
-button {
+.nav button {
   background-color: var(--menu-item-bg-color);
   color: var(--menu-item-font-color);
   width: 12rem;
@@ -72,9 +81,55 @@ button {
 
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.nav ul li:hover,
+.nav button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-heading);
+}
+
+.nav ul li:hover div svg path,
+.nav button:hover svg path {
+  fill: var(--light-heading);
+}
+
+.nav ul li:active,
+.nav button:active {
+  background-color: var(--primary-press-color);
+  color: var(--nav-item-pressed);
+}
+
+.nav ul li:active div svg path,
+.nav button:active svg path {
+  fill: var(--nav-item-pressed);
+}
+
+.nav ul li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li div:first-of-type,
+.nav button div:first-of-type {
+  max-width: 30%;
+}
+
+.nav ul li div:last-of-type,
+.nav button div:last-of-type {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
 }
 
 .nav button {
   border: none;
   outline: none;
+}
+
+.layout section {
+  grid-area: main;
 }
