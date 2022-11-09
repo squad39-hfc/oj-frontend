@@ -19,6 +19,7 @@ import { ReactComponent as AttendanceIcon } from '../assets/icons/Attendance.svg
 //styles
 
 import styles from './Layout.module.css';
+import { Link } from 'react-router-dom';
 
 const Layout = props => {
   const [isOpen, setIsOpen] = useState(true);
@@ -81,9 +82,11 @@ const Layout = props => {
       ) : (
         <nav className={`${styles.nav} slide-in`}>
           <ul>
-            <NavItem label="Trilhas">
-              <TrailIcon />
-            </NavItem>
+            <Link to="/">
+              <NavItem label="Trilhas">
+                <TrailIcon />
+              </NavItem>
+            </Link>
             <NavItem label="Ranking">
               <RankingIcon />
             </NavItem>
