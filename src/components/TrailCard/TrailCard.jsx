@@ -1,7 +1,7 @@
-import React from 'react';
+import styles from './TrailCard.module.css';
 
 const TrailCard = () => {
-  return <div>TrailCard</div>;
+  return <div className={styles.trail}>TrailCard</div>;
 };
 
 export default TrailCard;
