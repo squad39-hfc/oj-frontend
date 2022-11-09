@@ -1,11 +1,12 @@
+import ContentAccordion from '../../components/ContentAccordion/ContentAccordion';
 import styles from './Trail.module.css';
 
 const Trail = props => {
   return (
     <section className={styles.trailContent}>
-      <section>
+      <section className={styles.trailInfo}>
         <div>
-          <div>
+          <div className={styles.mainInfo}>
             <h1>{props.title}</h1>
             <small>
               {props.duration} - {props.contentNumber} conteúdos
@@ -13,13 +14,19 @@ const Trail = props => {
             <small>Expira em {props.expirationDate}</small>
           </div>
           <p>{props.description}</p>
-          <progress max="100" value={props.progress}></progress>{' '}
-          <span>
-            <small>{props.progress}%</small>
-          </span>
-          <button>começar agora</button>
+          <div className={styles.progressInfo}>
+            <progress max="100" value={props.progress}></progress>
+            <span>
+              <small>{props.progress}%</small>
+            </span>
+          </div>
+          <button>
+            <h4>começar agora</h4>
+          </button>
         </div>
-        <div></div>
+      </section>
+      <section className={styles.content}>
+        <ContentAccordion />
       </section>
     </section>
   );
