@@ -143,3 +143,45 @@
   align-items: center;
   margin-top: 3.75rem;
 }
+
+@media (max-width: 320px) {
+  .header button img {
+    margin-left: 1rem;
+  }
+
+  .layout section {
+    max-width: 320px;
+  }
+
+  a {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header button img {
+    margin-left: 1rem;
+  }
+
+  .header div {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header button img {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .layout .header div {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1440px){
+  .layout .header div {
+    margin-right: 2rem;
+  }
+}

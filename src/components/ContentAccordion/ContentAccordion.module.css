@@ -29,6 +29,7 @@
   height: 2.75rem;
   padding: 0.625rem;
   gap: 1rem;
+  border-bottom: 1px solid var(--sec-light-bg-color);
 }
 
 .accordion .accordionItem .accordionHeader .titleWrapper {

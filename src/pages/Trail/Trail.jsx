@@ -30,7 +30,7 @@ const Trail = props => {
       </section>
       <section className={styles.contentAccordion}>
         <ContentAccordion />
-        {isAdmin && <button>Editar trilha</button>}
+        {isAdmin && <button><h4>Editar trilha</h4></button>}
       </section>
     </section>
   );

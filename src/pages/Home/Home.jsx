@@ -45,7 +45,7 @@ const Home = () => {
         </main>
       </section>
     </section>
-    // </Layout>
+    
   );
 };
 
