@@ -1,0 +1,47 @@
+{
+  "dev": {
+    "progress": 5,
+    "modulos": [
+      {
+        "title": "Introdução",
+        "progress": 30,
+        "medias": [
+          {
+            "id": 3,
+            "type": "video",
+            "title": "Introdução",
+            "link": "https://www.youtube.com/watch?v=laKM6NOrdbA&ab_channel=4KVideoNature-FocusMusic",
+            "duration": "5min 32s"
+          },
+          {
+            "id": 4,
+            "type": "article",
+            "title": "Artigo Exemplo",
+            "link": "http://s29.q4cdn.com/175625835/files/doc_downloads/test.pdf",
+            "duration": "1min"
+          }
+        ]
+      },
+      {
+        "title": "Módulo 1",
+        "progress": 20,
+        "medias": [
+          {
+            "id": 1,
+            "type": "video",
+            "title": "Introdução",
+            "link": "https://www.youtube.com/watch?v=laKM6NOrdbA&ab_channel=4KVideoNature-FocusMusic",
+            "duration": "12min 45s"
+          },
+          {
+            "id": 2,
+            "type": "article",
+            "title": "Artigo Exemplo",
+            "link": "http://s29.q4cdn.com/175625835/files/doc_downloads/test.pdf",
+            "duration": "2min"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -36,7 +36,6 @@
   align-self: center;
   justify-content: left;
   gap: 0.625rem;
-  
 }
 
 .accordion .accordionItem .accordionHeader .accordionProgressInfo {
@@ -108,4 +107,8 @@
   flex: 1;
   justify-content: flex-start;
   gap: 0.5rem;
+}
+
+.accordion .accordionItem .star {
+  cursor: not-allowed;
 }
