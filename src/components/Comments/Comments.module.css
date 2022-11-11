@@ -1,0 +1,80 @@
+.Comments {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Comments h4 {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+.Comments .newCommentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Comments .newCommentWrapper div {
+  display: flex;
+  gap: 0.875rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Comments .newCommentWrapper textarea {
+  border-radius: 8px;
+  border: 1px solid #6e6e6e50;
+  width: 40rem;
+  height: 4.5rem;
+  text-indent: 0.5rem;
+  padding: 0.625rem;
+}
+
+.Comments .newCommentWrapper textarea:focus {
+  outline: none;
+}
+
+.Comments .newCommentWrapper button {
+  width: 7.438rem;
+  height: 2rem;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--light-heading);
+  font-weight: 700;
+  padding: 0.5rem 1.813rem;
+  align-self: flex-end;
+}
+
+.Comments .newCommentWrapper button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.Comments .newCommentWrapper button:active {
+  background-color: var(--primary-press-color);
+}
+
+.Comments .commentsList {
+  margin-bottom: 1rem;
+}
+
+.Comments .commentsList div {
+  display: flex;
+  gap: 0.875rem;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px solid #6e6e6e50;
+  width: 100%;
+  gap: 1rem;
+}
+
+.Comments .commentsList div p {
+  flex: 1;
+  width: 40rem;
+  height: 4.5rem;
+  text-indent: 0.5rem;
+  padding: 0.625rem;
+}

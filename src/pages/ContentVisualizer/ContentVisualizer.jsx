@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import styles from './ContentVisualizer.module.css';
 
 import data from '../../data/data.json';
+import Comments from '../../components/Comments/Comments';
 
 const ContentVisualizer = props => {
   const { id } = useParams();
@@ -18,9 +19,13 @@ const ContentVisualizer = props => {
   // });
   // console.log('data', datamock);
 
- 
-
-  return <section className={styles.content}>ContentVisualizer</section>;
+  return (
+    <section className={styles.content}>
+      <section></section>
+      <h2>Aula 1 - Introdução</h2>
+      <Comments></Comments>
+    </section>
+  );
 };
 
 export default ContentVisualizer;

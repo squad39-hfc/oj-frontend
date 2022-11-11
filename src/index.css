@@ -52,9 +52,14 @@ p {
   font-size: 0.875rem;
 }
 
-p {
+p,
+textarea {
   font-weight: 400;
   color: var(--p-font-color);
+}
+
+textarea {
+  resize: none;
 }
 
 small {
