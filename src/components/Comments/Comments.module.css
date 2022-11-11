@@ -7,7 +7,6 @@
 }
 
 .Comments h4 {
-  align-self: flex-start;
   margin-bottom: 1rem;
 }
 
@@ -59,16 +58,20 @@
 
 .Comments .commentsList {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .Comments .commentsList div {
   display: flex;
+  flex-direction: column;
   gap: 0.875rem;
   justify-content: center;
   align-items: flex-start;
   border-bottom: 1px solid #6e6e6e50;
   width: 100%;
   gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .Comments .commentsList div p {
@@ -77,4 +80,5 @@
   height: 4.5rem;
   text-indent: 0.5rem;
   padding: 0.625rem;
+  margin-bottom: 0.5rem;
 }

@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import ContentAccordion from '../../components/ContentAccordion/ContentAccordion';
 import styles from './Trail.module.css';
 
 const Trail = props => {
+  const [isAdmin, setIsAdmin] = useState(true);
+
   return (
     <section className={styles.trailContent}>
       <section className={styles.trailInfo}>
@@ -25,8 +28,9 @@ const Trail = props => {
           </button>
         </div>
       </section>
-      <section className={styles.content}>
+      <section className={styles.contentAccordion}>
         <ContentAccordion />
+        {isAdmin && <button>Editar trilha</button>}
       </section>
     </section>
   );

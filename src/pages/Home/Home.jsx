@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    // <Layout>
     <section className={styles.container}>
       <section>
         <div>

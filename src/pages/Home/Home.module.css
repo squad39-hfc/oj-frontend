@@ -10,14 +10,22 @@
 .container section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .container main {
   display: flex;
 }
 
-.container section div h2 {
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+@media (max-width: 768px) {
+  .container main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: -2rem;
+  }
+
+  .container {
+  }
 }

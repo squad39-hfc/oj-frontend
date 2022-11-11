@@ -3,6 +3,7 @@ import styles from './ContentAccordion.module.css';
 import StarIcon from '../../assets/icons/Star.svg';
 
 import PlayIcon from '../../assets/icons/Play.svg';
+import ArticleIcon from '../../assets/icons/Article.svg';
 import { Link } from 'react-router-dom';
 
 const accordionContentItems = {
@@ -92,7 +93,33 @@ const ContentAccordion = () => {
               <ul>
                 {modulo.medias.map((media, index) => (
                   <li key={`${media.id}`}>
-                    <Link to={`/visualizacao/${media.type}/${media.id}`}>
+                    {console.log(media.link)}
+                    {media.type === 'video' || media.type === 'live' ? (
+                      <Link to={`/visualizacao/${media.type}/${media.id}`}>
+                        <div>
+                          <img src={PlayIcon} alt="Icone de tipo de mídia" />
+                          <p>{media.title}</p>
+                          <span>
+                            <small>{media.duration}</small>
+                          </span>
+                        </div>
+                      </Link>
+                    ) : (
+                      <a
+                        href={media.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div>
+                          <img
+                            src={ArticleIcon}
+                            alt="Icone de tipo de mídia: Artigo"
+                          />
+                          <p>{media.title}</p>
+                        </div>
+                      </a>
+                    )}
+                    {/* <Link to={`/visualizacao/${media.type}/${media.id}`}>
                       <div>
                         <img src={PlayIcon} alt="Icone de tipo de mídia" />
                         <p>{media.title}</p>
@@ -100,7 +127,7 @@ const ContentAccordion = () => {
                           <small>{media.duration}</small>
                         </span>
                       </div>
-                    </Link>
+                    </Link> */}
                     <span>
                       <img
                         className={styles.star}

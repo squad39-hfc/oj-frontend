@@ -47,8 +47,11 @@ const AppRoutes = () => {
           />
         }
       />
-      <Route path="/visualizacao/article/:id" element={<ContentVisualizer />} />
-      <Route path="/visualizacao/video/:id" element={<ContentVisualizer />} />
+      
+      <Route
+        path="/visualizacao/video/:id"
+        element={<ContentVisualizer type="video" />}
+      />
     </Routes>
   );
 };
