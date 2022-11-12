@@ -10,6 +10,11 @@
   margin-bottom: 1rem;
 }
 
+.Comments .commentsTitle {
+  align-self: flex-start;
+  margin-bottom: -3rem;
+}
+
 .Comments .newCommentWrapper {
   display: flex;
   flex-direction: column;
@@ -81,4 +86,29 @@
   text-indent: 0.5rem;
   padding: 0.625rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 425px) {
+  .Comments .newCommentWrapper textarea,
+  .Comments .commentsList {
+    width: 25rem;
+  }
+
+  .Comments .commentsList div p {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .Comments .newCommentWrapper textarea,
+  .Comments .commentsList {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .Comments .newCommentWrapper textarea,
+  .Comments .commentsList {
+    width: 19rem;
+  }
 }

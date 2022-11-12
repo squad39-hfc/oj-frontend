@@ -1,5 +1,6 @@
 import styles from './Comments.module.css';
 import PersonImg from '../../assets/icons/Person.svg';
+
 import { useState } from 'react';
 
 const Comments = props => {
@@ -14,7 +15,7 @@ const Comments = props => {
 
   return (
     <section className={styles.Comments}>
-      <h4>Comentários</h4>
+      <h4 className={styles.commentsTitle}>Comentários</h4>
       <section className={styles.commentsList}>
         {commentList.length > 0 &&
           commentList.map(item => (
@@ -39,8 +40,10 @@ const Comments = props => {
             onChange={event => setComment(event.target.value)}
           />
         </div>
-        <button onClick={handleCommentButton}>
-          <h4>Publicar</h4>
+        <button className={styles.editButton} onClick={handleCommentButton}>
+          <h4>
+            Publicar            
+          </h4>
         </button>
       </div>
     </section>

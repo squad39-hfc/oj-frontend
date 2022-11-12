@@ -1,3 +1,5 @@
+import styles from './VideoMedia.module.css';
+
 const VideoMedia = props => {
   const generateLink = link => {
     let newLink = link.split('=');
@@ -7,18 +9,18 @@ const VideoMedia = props => {
 
   const videoLink = generateLink(props.link);
 
-  console.log(videoLink);
-
   return (
-    <iframe
-      width="600"
-      height="400"
-      src={`https://www.youtube.com/embed/${videoLink}`}
-      title="YouTube video player"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
+    <div className={styles.VideoMedia}>
+      <iframe
+        // width="600"
+        // height="400"
+        src={`https://www.youtube.com/embed/${videoLink}`}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
   );
 };
 

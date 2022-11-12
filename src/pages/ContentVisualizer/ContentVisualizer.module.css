@@ -1,5 +1,4 @@
 .content {
-  display: flex;
   flex-direction: column;
 }
 
@@ -20,4 +19,17 @@
   justify-content: center;
   align-items: center;
   margin: auto 0;
+}
+
+@media (max-width: 425px) {
+  .content .mediaWrapper {
+    max-width: 25rem;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 375px) {
+  .content div {
+    max-width: 20rem;
+  }
 }

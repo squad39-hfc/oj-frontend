@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ContentAccordion from '../../components/ContentAccordion/ContentAccordion';
 import styles from './Trail.module.css';
+import PencilIcon from '../../assets/icons/Pencil.svg';
 
 const Trail = props => {
   const [isAdmin, setIsAdmin] = useState(true);
@@ -30,7 +31,15 @@ const Trail = props => {
       </section>
       <section className={styles.contentAccordion}>
         <ContentAccordion />
-        {isAdmin && <button><h4>Editar trilha</h4></button>}
+        {isAdmin && (
+          <button>
+            <h4 className={styles.editButton}>Editar &nbsp; trilha</h4>
+            <img
+              src={PencilIcon}
+              alt="Ícone de Lápis representando a possibilidade de editar"
+            />
+          </button>
+        )}
       </section>
     </section>
   );
