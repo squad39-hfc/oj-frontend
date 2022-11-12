@@ -12,8 +12,7 @@ const VideoMedia = props => {
   return (
     <div className={styles.VideoMedia}>
       <iframe
-        // width="600"
-        // height="400"
+       
         src={`https://www.youtube.com/embed/${videoLink}`}
         title="YouTube video player"
         frameBorder="0"

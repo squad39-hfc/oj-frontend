@@ -1,10 +1,6 @@
 import { useState } from 'react';
 
-//components
-
 import NavItem from '../components/NavItem/NavItem';
-
-//icons imports
 
 import MenuIcon from '../assets/icons/Menu.svg';
 import NotificationsIcon from '../assets/icons/Notifications.svg';
@@ -15,8 +11,6 @@ import { ReactComponent as RankingIcon } from '../assets/icons/Ranking.svg';
 import { ReactComponent as ProfileIcon } from '../assets/icons/Profile.svg';
 import { ReactComponent as MyAccountIcon } from '../assets/icons/MyAccount.svg';
 import { ReactComponent as AttendanceIcon } from '../assets/icons/Attendance.svg';
-
-//styles
 
 import styles from './Layout.module.css';
 import { Link } from 'react-router-dom';

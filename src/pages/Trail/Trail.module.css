@@ -105,8 +105,6 @@
   white-space: nowrap;
 }
 
-.trailContent .contentAccordion button h4 {
-}
 
 .trailContent .contentAccordion button:hover {
   background-color: var(--primary-hover-color);

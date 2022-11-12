@@ -1,6 +1,5 @@
 import styles from './Home.module.css';
 import TrailCard from '../../components/TrailCard/TrailCard';
-// import Layout from '../../layout/Layout';
 
 import UxImage from '../../assets/images/Uxdesign.svg';
 import QaImage from '../../assets/images/Qa.svg';

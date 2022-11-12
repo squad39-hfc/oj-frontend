@@ -55,7 +55,7 @@ const accordionContentItems = {
 };
 
 const ContentAccordion = () => {
-  // const [accordionContentItems, setAccordionContentItems] = useState();
+  
   // const [data, setData] = useState([]);
 
   // useEffect(() => {
@@ -119,15 +119,7 @@ const ContentAccordion = () => {
                         </div>
                       </a>
                     )}
-                    {/* <Link to={`/visualizacao/${media.type}/${media.id}`}>
-                      <div>
-                        <img src={PlayIcon} alt="Icone de tipo de mídia" />
-                        <p>{media.title}</p>
-                        <span>
-                          <small>{media.duration}</small>
-                        </span>
-                      </div>
-                    </Link> */}
+                  
                     <span>
                       <img
                         className={styles.star}
