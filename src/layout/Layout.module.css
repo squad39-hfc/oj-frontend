@@ -181,6 +181,10 @@
 }
 
 @media (max-width: 1440px){
+  .header {
+    max-width: 1440px;
+  }
+
   .layout .header div {
     margin-right: 2rem;
   }

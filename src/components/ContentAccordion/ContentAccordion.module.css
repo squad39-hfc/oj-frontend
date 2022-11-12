@@ -113,3 +113,33 @@
 .accordion .accordionItem .star {
   cursor: not-allowed;
 }
+
+.trailContent .contentAccordion {
+  width: 30rem;
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    width: 30rem;
+  }
+}
+@media (max-width: 425px) {
+  .accordion {
+    width: 25rem;
+  }
+
+  .accordion .accordionItem .accordionHeader .accordionProgressInfo progress {
+    width: 4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .accordion {
+    width: 22rem;
+  }
+}
+@media (max-width: 320px) {
+  .accordion {
+    width: 19.5rem;
+  }
+}

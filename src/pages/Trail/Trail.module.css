@@ -122,3 +122,10 @@
     width: 25rem;
   }
 }
+
+
+@media (max-width: 768px) {
+  .trailContent .contentAccordion {
+    width: 23rem;
+  }
+}
