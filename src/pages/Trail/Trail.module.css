@@ -119,13 +119,12 @@
   }
 
   .trailContent .contentAccordion {
-    width: 25rem;
+    width: 23rem;
   }
 }
 
-
-@media (max-width: 768px) {
-  .trailContent .contentAccordion {
-    width: 23rem;
+@media (max-width: 375px) {
+  .trailContent .contentAccordion button {
+    margin-right: 1rem;
   }
 }
