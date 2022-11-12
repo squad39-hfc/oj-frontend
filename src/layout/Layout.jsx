@@ -32,6 +32,7 @@ const Layout = props => {
       <header className={styles.header}>
         <button>
           <img
+            className={styles.menuIcon}
             onClick={handleMenuClick}
             src={MenuIcon}
             alt="Ícone de Menu representado por 3 linhas horizontais agrupadas verticalmente"

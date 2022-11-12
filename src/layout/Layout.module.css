@@ -35,6 +35,10 @@
   cursor: not-allowed;
 }
 
+.header .menuIcon {
+  cursor: pointer;
+}
+
 .header div {
   width: 4rem;
   display: flex;
