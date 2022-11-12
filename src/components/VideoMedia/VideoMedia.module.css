@@ -1,7 +1,13 @@
 .VideoMedia,
 .VideoMedia iframe {
-  max-width: 40rem;
+  width: 40rem;
   height: 25rem;
+}
+@media (max-width: 768px) {
+  .VideoMedia,
+  .VideoMedia iframe {
+    width: 30rem;
+  }
 }
 
 @media (max-width: 425px) {

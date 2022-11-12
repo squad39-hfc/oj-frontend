@@ -33,7 +33,7 @@ const Trail = props => {
         <ContentAccordion />
         {isAdmin && (
           <button>
-            <h4 className={styles.editButton}>Editar &nbsp; trilha</h4>
+            <h4 className={styles.editButton}>Editar trilha</h4>
             <img
               src={PencilIcon}
               alt="Ícone de Lápis representando a possibilidade de editar"

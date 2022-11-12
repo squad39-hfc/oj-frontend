@@ -109,6 +109,6 @@
 @media (max-width: 320px) {
   .Comments .newCommentWrapper textarea,
   .Comments .commentsList {
-    width: 19rem;
+    width: 17rem;
   }
 }

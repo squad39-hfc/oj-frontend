@@ -4,13 +4,40 @@
 
 .content .mediaWrapper {
   background-color: var(--dark-bg-color);
-  width: 98.5vw;
+  width: 100vw;
   margin-top: -3.75rem;
   overflow: hidden;
   margin-bottom: 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.content .mediaWrapper .videoPanel {
+  background-color: var(--sec-light-bg-color);
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: -1.5rem;
+}
+
+.content .mediaWrapper .videoPanel .videoButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: 3rem;
+  align-self: flex-end;
+  margin-right: 5rem;
+}
+
+.content .mediaWrapper .videoPanel .videoButtons button {
+  width: 2.875rem;
+  height: 1.5rem;
+  border-radius: 8px;
+  outline: none;
+  border: 1.5px solid #212121;
 }
 
 .content div {
@@ -23,7 +50,7 @@
 
 @media (max-width: 425px) {
   .content .mediaWrapper {
-    max-width: 25rem;
+    max-width: 27rem;
     object-fit: cover;
   }
 }
@@ -31,5 +58,8 @@
 @media (max-width: 375px) {
   .content div {
     max-width: 20rem;
+  }
+  .content .mediaWrapper .videoPanel {
+    min-width: 375px;
   }
 }

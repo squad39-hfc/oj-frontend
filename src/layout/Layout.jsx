@@ -48,10 +48,15 @@ const Layout = props => {
             <img
               src={NotificationsIcon}
               alt="Ícone de notificações representado por um sino desenhado em linhas cinzas"
+              title="Desculpe! Função ainda não disponível"
             />
           </button>
           <button className={styles['person__icon']}>
-            <img src={PersonIcon} alt="Ícone de Usuário" />
+            <img
+              src={PersonIcon}
+              alt="Ícone de Usuário"
+              title="Desculpe! Ainda não está disponível"
+            />
           </button>
         </div>
       </header>
