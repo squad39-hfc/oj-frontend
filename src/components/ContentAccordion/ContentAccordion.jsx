@@ -56,19 +56,7 @@ const accordionContentItems = {
 
 const ContentAccordion = () => {
   
-  // const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const result = await axios(
-  //       'https://mocki.io/v1/ad5eb5ea-250a-4191-9c60-c79183a9e884',
-  //     );
-  //     console.log(result.data[0]);
-  //     setData(result.data[0]);
-  //   };
-
-  //   fetchData();
-  // }, []);
+  
 
   return (
     <div className={styles.accordion}>
@@ -93,7 +81,7 @@ const ContentAccordion = () => {
               <ul>
                 {modulo.medias.map((media, index) => (
                   <li key={`${media.id}`}>
-                    {console.log(media.link)}
+                    
                     {media.type === 'video' || media.type === 'live' ? (
                       <Link to={`/visualizacao/${media.type}/${media.id}`}>
                         <div>
