@@ -6,7 +6,7 @@ import api from '../../services/api';
 import Spinner from '../../components/Spinner/Spinner';
 
 const Trail = props => {
-  const [isAdmin, setIsAdmin] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
