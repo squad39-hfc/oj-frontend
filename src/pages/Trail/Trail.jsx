@@ -14,12 +14,17 @@ const Trail = props => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const result = await api.get('/trilhas/all');
-      const json = await result.data.json();
-
-      console.log(json);
-      setData([...json]);
-      setIsLoading(false);
+      try {
+        const result = await api.get('/trilhas/all');
+        const json = await result.json();
+        console.log(json);
+        setData([...json]);
+        setIsLoading(false);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        setIsLoading(false);
+      }
     };
 
     fetchData();
