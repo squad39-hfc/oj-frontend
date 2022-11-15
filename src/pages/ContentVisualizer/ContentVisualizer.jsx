@@ -10,6 +10,8 @@ import RightIcon from '../../assets/icons/Right.svg';
 const ContentVisualizer = props => {
   const { id } = useParams();
 
+  // const videoData = data.filter(item => +item.id === +id);
+
   return (
     <section className={styles.content}>
       <section className={styles.mediaWrapper}>

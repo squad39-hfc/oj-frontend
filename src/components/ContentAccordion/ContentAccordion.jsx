@@ -25,7 +25,7 @@ const accordionContentItems = {
             id: 4,
             type: 'article',
             title: 'Artigo Exemplo',
-            link: 'http://s29.q4cdn.com/175625835/files/doc_downloads/test.pdf',
+            link: 'https://medium.com/orangejuicefc/design-thinking-e-carreira-como-migrei-de-psicologia-para-ux-design-cb79e8b47df5',
             duration: '1min',
           },
         ],
@@ -55,9 +55,6 @@ const accordionContentItems = {
 };
 
 const ContentAccordion = () => {
-  
-  
-
   return (
     <div className={styles.accordion}>
       <div className={styles.accordionItem}>
@@ -81,7 +78,6 @@ const ContentAccordion = () => {
               <ul>
                 {modulo.medias.map((media, index) => (
                   <li key={`${media.id}`}>
-                    
                     {media.type === 'video' || media.type === 'live' ? (
                       <Link to={`/visualizacao/${media.type}/${media.id}`}>
                         <div>
@@ -107,7 +103,7 @@ const ContentAccordion = () => {
                         </div>
                       </a>
                     )}
-                  
+
                     <span>
                       <img
                         className={styles.star}
