@@ -1,7 +1,6 @@
 # Projeto - Grupo de Formação FCamara - Hackaton 👩🏾‍💻
 
-#### O projeto desenvolvido trata  de uma alternativa de solução à forma como a Orange Juice disponibiliza atualmente seus materiais
-#### de estudo nas áreas de Design, Quality Assurance e Desenvolvimento FullStack.
+#### O projeto desenvolvido trata  de uma alternativa de solução à forma como a Orange Juice disponibiliza atualmente seus materiais de estudo nas áreas de Design, Quality Assurance e Desenvolvimento FullStack.
 
 
 
